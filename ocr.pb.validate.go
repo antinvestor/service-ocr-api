@@ -44,6 +44,8 @@ func (m *OCRFile) Validate() error {
 
 	// no validation rules for Language
 
+	// no validation rules for Status
+
 	// no validation rules for Text
 
 	// no validation rules for Properties
@@ -242,8 +244,6 @@ func (m *OcrResponse) Validate() error {
 	}
 
 	// no validation rules for ReferenceId
-
-	// no validation rules for State
 
 	for idx, item := range m.GetResult() {
 		_, _ = idx, item

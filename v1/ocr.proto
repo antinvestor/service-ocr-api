@@ -9,8 +9,9 @@ import "common.proto";
 message OCRFile {
     string file_id = 1;
     string language = 2;
-    string text = 3;
-    map<string, string> properties = 4;
+    apis.STATUS status = 3;
+    string text = 4;
+    map<string, string> properties = 5;
 }
 
 //Request to determine text found in a file
@@ -25,8 +26,7 @@ message OcrRequest {
 
 message OcrResponse {
     string reference_id = 1;
-    apis.STATE state = 2;
-    repeated OCRFile result = 3;
+    repeated OCRFile result = 2;
 }
 
 message StatusRequest {

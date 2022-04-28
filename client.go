@@ -1,4 +1,4 @@
-package ocr_v1
+package ocrv1
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"math"
 )
 
-const ctxKeyService = "ocrClientKey"
+const ctxKeyService = apic.CtxServiceKey("ocrClientKey")
 
 func defaultProfileClientOptions() []apic.ClientOption {
 	return []apic.ClientOption{
